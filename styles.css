@@ -1,0 +1,97 @@
+
+
+body {
+  background: #FFEAEA;
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 60px;
+}
+
+.card{
+    background-color: #FFEAEA;
+    font-size: 2rem;
+    border: none;
+    padding: 3rem;
+    
+}
+
+.cake {
+  position: relative;
+  width: 160px;
+  height: 150px;
+  margin: 70px auto 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cake .layer {
+  height: 40px;
+  border-radius: 10px;
+  position: absolute;
+  
+}
+
+.layer1 {
+  top: 0;
+  width: 80px;
+  background: #9ECAD6;
+  border: 3px solid #79b7c9;
+}
+
+.layer2 {
+  top: 45px;
+  width: 140px;
+  background: #d4b5eb;
+  border: 3px solid #bb94d8;
+}
+
+.layer3 {
+  top: 90px;
+  width: 200px;
+  background: #f06292;
+  border: 3px solid #e91e63;
+}
+
+.candle {
+  position: absolute;
+  top: -40px;
+  left: 75px;
+  width: 10px;
+  height: 40px;
+  background: #fff;
+  border-radius: 2px;
+  z-index: 4;
+}
+
+.flame {
+  width: 12px;
+  height: 20px;
+  background: radial-gradient(ellipse at center, #ffeb3b 0%, orange 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: -1px;
+  animation: flicker 0.2s infinite;
+}
+
+@keyframes flicker {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.hint {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .card h1 {
+      font-size: 4rem;
+    }
+    .card h3 {
+      font-size: 1.5rem;
+    }
+    .card p {
+      font-size: 1.25rem;
+    }
+}
